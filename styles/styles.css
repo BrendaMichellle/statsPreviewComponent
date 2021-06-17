@@ -1,0 +1,133 @@
+/*--- VARIABLES ---*/
+/*--- MIXINS ---*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 85vw;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+/*img {
+  height: auto;
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 15px 15px 0 0;
+}*/
+.img__container {
+  height: 60%;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 12rem;
+  background-image: url(/images/image-header-mobile.jpg);
+  background-size: cover;
+  background-color: rgba(160, 71, 215, 0.603);
+  background-blend-mode: overlay;
+  background-position: center;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+
+.tagline {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.tagline__header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.tagline__desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+}
+
+.accent {
+  color: #aa5cdb;
+}
+
+.stats {
+  margin: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+}
+
+.stats__desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 440px) {
+  .image {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .image {
+    border-radius: 0 15px 15px 0;
+    height: 20rem;
+  }
+  .tagline,
+  .stats {
+    text-align: unset;
+  }
+  .stats__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
