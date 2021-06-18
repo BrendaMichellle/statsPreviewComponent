@@ -44,7 +44,7 @@ main {
 .image {
   width: 100%;
   height: 100%;
-  background-image: url(/images/image-header-mobile.jpg);
+  background-image: url(../images/image-header-mobile.jpg);
   background-size: cover;
   background-color: hsla(277, 64%, 56%, 0.603);
   background-blend-mode: overlay;
@@ -112,7 +112,7 @@ main {
     height: 100%;
   }
   .image {
-    background-image: url(/images/image-header-desktop.jpg);
+    background-image: url(../images/image-header-desktop.jpg);
     border-radius: 0 15px 15px 0;
     height: 100%;
   }
