@@ -11,7 +11,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-<img src="./images/desktopdesign.png" width="1000">
+<img src="./images/desktopImage.png" width="1000">
 
 ### Links
 
