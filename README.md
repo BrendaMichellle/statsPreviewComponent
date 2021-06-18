@@ -11,12 +11,12 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-<img src="./images/desktopImage.png" width="1000">
+<img src="/images/desktopImage.png" alt="">
 
 ### Links
 
-- Solution URL: [View solution](https://www.frontendmentor.io/solutions/responsive-3-card-preview-component-html5-and-sassscss-fHTIF7Zip)
-- Live Site: [live site](https://brendamichellle.github.io/3CardPreviewComponent/)
+- Solution URL: [View solution](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-html5-sassscss-kxpiOE5Tt)
+- Live Site: [live site](https://brendamichellle.github.io/statsPreviewComponent/)
 
 ## My process
 
