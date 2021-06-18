@@ -1,5 +1,4 @@
 /*--- VARIABLES ---*/
-/*--- MIXINS ---*/
 *,
 ::before,
 ::after {
@@ -20,10 +19,10 @@ body {
 
 main {
   max-width: 85vw;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 40px auto 40px auto;
   background-color: #1b1938;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,20 +40,14 @@ main {
   border-radius: 15px;
 }
 
-/*img {
-  height: auto;
-  width: 100%;
-  opacity: 0.5;
-  border-radius: 15px 15px 0 0;
-}*/
 .img__container {
-  height: 60%;
+  height: 15rem;
   width: 100%;
 }
 
 .image {
   width: 100%;
-  height: 12rem;
+  height: 100%;
   background-image: url(/images/image-header-mobile.jpg);
   background-size: cover;
   background-color: rgba(160, 71, 215, 0.603);
@@ -86,6 +79,10 @@ main {
   color: #aa5cdb;
 }
 
+.stats__container {
+  margin: 10px;
+}
+
 .stats {
   margin: 20px;
   font-family: 'Lexend Deca', sans-serif;
@@ -100,21 +97,43 @@ main {
 }
 
 @media screen and (min-width: 440px) {
-  .image {
-    height: 15rem;
+  .image__container {
+    height: 16rem;
   }
 }
 
 @media screen and (min-width: 750px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  .img__container {
+    height: 100%;
+  }
   .image {
+    background-image: url(/images/image-header-desktop.jpg);
     border-radius: 0 15px 15px 0;
-    height: 20rem;
+    height: 100%;
+  }
+  .tagline {
+    padding: 30px;
   }
   .tagline,
   .stats {
@@ -128,6 +147,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

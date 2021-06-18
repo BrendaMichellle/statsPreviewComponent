@@ -7,8 +7,6 @@ $white: hsl(0, 0%, 100%);
 $whiteParagraphs: hsla(0, 0%, 100%, 0.75);
 $WhiteHeadings: hsla(0, 0%, 100%, 0.6);
 
-/*--- MIXINS ---*/
-
 *,
 ::before,
 ::after {
@@ -28,10 +26,8 @@ body {
 
 main {
   max-width: 85vw;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  max-height: fit-content;
+  margin: 40px auto 40px auto;
   background-color: $desaturatedBlue;
   display: flex;
   flex-direction: column;
@@ -40,21 +36,14 @@ main {
   border-radius: 15px;
 }
 
-/*img {
-  height: auto;
-  width: 100%;
-  opacity: 0.5;
-  border-radius: 15px 15px 0 0;
-}*/
-
 .img__container {
-  height: 60%;
+  height: 15rem;
   width: 100%;
 }
 
 .image {
   width: 100%;
-  height: 12rem;
+  height: 100%;
   background-image: url(/images/image-header-mobile.jpg);
   background-size: cover;
   background-color: hsla(277, 64%, 56%, 0.603);
@@ -86,6 +75,10 @@ main {
   color: $softViolet;
 }
 
+.stats__container {
+  margin: 10px;
+}
+
 .stats {
   margin: 20px;
   font-family: 'Lexend Deca', sans-serif;
@@ -100,19 +93,33 @@ main {
 }
 
 @media screen and (min-width: 440px) {
-  .image {
-    height: 15rem;
+  .image__container {
+    height: 16rem;
   }
 }
 
 @media screen and (min-width: 750px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   main {
     flex-direction: row-reverse;
   }
-  .image {
-    border-radius: 0 15px 15px 0;
-    height: 20rem;
+  .img__container {
+    height: 100%;
   }
+  .image {
+    background-image: url(/images/image-header-desktop.jpg);
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+  }
+  .tagline {
+    padding: 30px;
+  }
+
   .tagline,
   .stats {
     text-align: unset;
@@ -120,5 +127,6 @@ main {
   .stats__container {
     display: flex;
     flex-direction: row;
+    padding: 10px 20px;
   }
 }
